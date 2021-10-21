@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color :#FF3924;
+    --secondary-color : #E8154C;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*----------------- general css -------------------*/
+.active{
+    background-color: var(--primary-color);
+}
+
+.active:hover{
+    background-color: var(--secondary-color);
+}
+.radius{
+    border-radius: 30px!important;
+}
+/*----------------- general css end -------------------*/
+
+/*----------------- home css -------------------*/
+.home_back{
+    background-color: #f5f5f5;
+    height: 150px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.home_img{
+    width: 180px;
+}
+/*----------------- home css end -------------------*/
+
+/*----------------- category css -------------------*/
+.category_header{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-right: 0!important;
+}
+
+.category_header::-webkit-scrollbar{
+    width: 0;
+}
+
+.category_card{
+    background-color: var(--primary-color);
+    color: white;
+    width: 200px;
+    border-radius: 50px;
+    padding: 12px;
+}
+/*----------------- category css end -------------------*/
+
+/*----------------- restaurant css -------------------*/
+.restaurant_header a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.go_to_restaurant{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.restaurant_card .card{
+    width: 200px;
+    border-radius: 45px;
+}
+
+.restaurant{
+    padding-bottom: 60px;
+}
+
+.restaurant_card-detail .card{
+    width: 100%;
+    border-radius: 45px;
+}
+
+.restaurant_cover{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-right: 0!important;
+    height: 265px;
+    position: absolute;
+    left: 0;
+    padding-left: 15px;
+}
+
+.restaurant_cover::-webkit-scrollbar{
+    width: 0;
+}
+/*----------------- restaurant css end -------------------*/
+
+/*----------------- cart css end -------------------*/
+.cart{
+    padding-bottom: 80px;
+}
+/*----------------- cart css end -------------------*/
+
+/*----------------- footer nav css -------------------*/
+.footer_nav{
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    background-color: white;
+}
+
+.footer_menu{
+    width: 70px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.footer_nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_nav a i{
+    font-size: 20px;
+}
+
+.footer_nav .search_tab{
+    position: relative;
+    margin: 0 20px;
+}
+
+.footer_nav .search{
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -15px;
+    position: absolute;
+    left: -33px;
+    animation: changeColor 5s linear 2s infinite alternate;
+    box-shadow: -1px 2px 20px 6px rgba(255,57,36,0.56);
+}
+
+.footer_nav .search i{
+    font-size: 20px;
+}
+
+@keyframes changeColor {
+    0%{
+        background-color: #FF8017;
+    }
+    35%{
+        background-color: #E84F15;
+    }
+    60%{
+        background-color: var(--primary-color);
+    }
+    100%{
+        background-color: var(--secondary-color);
+    }
+}
+/*----------------- footer nav css end -------------------*/
+
+
